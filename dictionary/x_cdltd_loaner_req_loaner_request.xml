@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Loaner Request" max_length="40" name="x_cdltd_loaner_req_loaner_request" sizeclass="1" type="collection">
+    <element extends="task" label="Loaner Request" max_length="40" name="x_cdltd_loaner_req_loaner_request" sizeclass="6" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Overdue reminder" max_length="40" name="last_overdue_reminder" type="glide_date_time"/>
+        <element label="Overdue count" max_length="40" name="overdue_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Pick up reminder" max_length="40" name="pick_up_reminder" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Returns reminder" max_length="40" name="return_reminder" type="glide_date_time"/>
         <element label="Test" max_length="40" name="test" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Depot" max_length="40" name="u_depot" type="string">
             <choice>
